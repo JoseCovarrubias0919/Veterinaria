@@ -1,0 +1,96 @@
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  background-image: url("Imagenes/Portada.jpg");
+  background-size: cover;
+  background-position: center inherit;
+  background-repeat: no-repeat;
+}
+
+header {
+	position: absolute;
+	bottom: 405px;
+	left: 4px;
+	margin: 0;
+	padding: 20px;
+	color: #3b5998;
+	font-size: 48px;
+	width: 380px;
+}
+
+.barra{
+	background-color: #dcdcdc;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	padding: 10px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px; /* Agrega padding-top para centrar el menú verticalmente */
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 50px; /* Agrega un padding al final del menu para centrar el boton */
+}
+
+nav ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8em 1.2em; /* Ajusta el padding para aumentar el tamaño del botón */
+  text-decoration: none;
+  color: #fff;
+  background-color: #3b5998;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  background-color: #3b5998;
+}
+
+nav ul ul li {
+  width: 200px;
+}
+
+nav ul ul a {
+  color: #fff;
+  padding: 0.5em;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul ul ul {
+  top: 0;
+  right: 100%;
+}
